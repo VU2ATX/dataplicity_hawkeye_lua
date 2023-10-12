@@ -1,4 +1,5 @@
 #!/usr/bin/env lua
+
 #Modifications by NSR
 
 function check_superuser()
