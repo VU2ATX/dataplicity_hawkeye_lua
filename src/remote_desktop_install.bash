@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="/opt/remote_desktop"
+DIR="/home/pi/remote_desktop"
 VNC="$DIR/noVNC_0.6"
 LAUNCHER="$DIR/start"
 STOP="$DIR/stop"
@@ -79,7 +79,7 @@ echo """#!/bin/bash
 
 vncserver -kill :1 2>/dev/null
 
-vncserver :1 -geometry 1920x1080 -depth 24 -dpi 96 
+vncserver :1 -geometry 1280x720 -depth 24 -dpi 96 
 """ > "$LAUNCHER" && chmod +x "$LAUNCHER"
 
 
